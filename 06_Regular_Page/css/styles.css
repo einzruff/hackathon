@@ -16,8 +16,13 @@
 	1. PRIMARY STYLES
 	2. COMMONS FOR PAGE DESIGN
 	3. HEADER
-	4. MAIN SECTION
-	5. FOOTER
+	4. INTRO SECTION
+	5. PORFOLIO SECTION
+	6. ABOUT SECTION
+	7. EXPERIENCE SECTION
+	8. EDUCATION SECTION
+	9. COUNTER SECTION
+	10. FOOTER
 
 ====================================================
 
@@ -26,18 +31,14 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
-/* html{ font-size: 100%; height: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; 
-	touch-action: manipulation;  -webkit-box-sizing: border-box; box-sizing: border-box;}
+html{ font-size: 100%; height: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
 
-body{ font-size: 20px;  margin: 0; font-weight: 400;
+
+body{ font-size: 20px; font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 400;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
-	line-height: 1; margin: 0 50px; padding: 60px 0; height: 100%; 
-	 -webkit-box-sizing: border-box; box-sizing: border-box;
+	line-height: 1; margin: 0 50px; padding: 60px 0; height: 100vh; 
 	width: calc(100% - 100px); position: relative; z-index: 1; color: #333; }
 
-.container {
-	padding: 20px;
-}
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
 
 h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
@@ -62,6 +63,10 @@ a b.light-color:hover{ text-decoration: none; color: #37D583; }
 
 b{ font-weight: 600; }
 
+button {
+	font-size: 15pt;
+}
+
 img{ width: 100%; }
 
 li{ list-style: none; display: inline-block; }
@@ -76,36 +81,21 @@ button{ outline: 0; border: 0; background: none; cursor: pointer; }
 
 b.max-bold{ font-weight: 700; }
 
-*, *::before, *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-*, *::before, *::after {
-    -webkit-box-sizing: inherit;
-	box-sizing: inherit;} 
 
 
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
-button {
-	font-size: 15px;
-}
-
 .display-table{ display: table; height: 100%; } 
 .display-table-cell{ display: table-cell; vertical-align: middle; } 
 
 .color-black{ color: #000; }
 .color-green{ color: #36D98A; }
-.color-light-black{ color: #bbb; }
 
 .margin-tb-10{ margin-top: 10px; margin-bottom: 10px; }
 
-.margin-t-10{ margin-top: 10px; }
-.margin-t-20{ margin-top: 20px; }
-
+.margin-b-5{ margin-bottom: 5px; }
 .margin-b-10{ margin-bottom: 10px; }
 .margin-b-30{ margin-bottom: 30px; }
 
@@ -114,13 +104,13 @@ button {
 3. HEADER
 --------------------------------- */
 
-/* header{ position: absolute; top: 0; left: 0; right: 0; height: 60px; text-align: center; z-index: 1000; }
+header{ position: absolute; top: 0; left: 0; right: 0; height: 60px; text-align: center; z-index: 1000; }
 
 header:after{ content:''; clear: both; }
 
-header .logo{ float: left; height: 40px; margin: 10px 0; }
+header .logo{ float: left; height: 100px; margin: 10px 0; }
 
-header .logo img{ height: 100%; width: auto; }
+header .logo img{ height: 70px; width: auto; }
 
 
 header .main-menu{ float: right; }
@@ -133,13 +123,13 @@ header .right-area{ float: right; height: 100%; line-height: 60px; margin-left: 
 
 /* HAMBURGER ICON */
 
-/* .menu-nav-icon{ display: inline-block; font-size: 30px; line-height: 40px; margin: 10px 0; 
-	display: none; cursor: pointer; } */
+.menu-nav-icon{ display: inline-block; font-size: 30px; line-height: 40px; margin: 10px 0; 
+	display: none; cursor: pointer; }
 
 	
 /* DROPDOWN MENU STYLING */
 
-/* header .main-menu li.drop-down{ position: relative; text-align: left; }
+header .main-menu li.drop-down{ position: relative; text-align: left; }
 
 header .main-menu li.drop-down > ul.drop-down-menu{ display: none; position: absolute; top: 60px; 
 	left: 0; min-width: 180px; box-shadow: 0px 3px 10px rgba(0,0,0,.3); background: #fff; }
@@ -148,7 +138,7 @@ header .main-menu li.drop-down > ul.drop-down-menu li{ display: block; border-to
 
 header .main-menu li.drop-down > ul.drop-down-menu li > a{ display: block; padding: 17px 20px; }
 
-header .main-menu li i{margin-left: 10px; } */
+header .main-menu li i{margin-left: 10px; }
 
 
 /* DROPDOWN HOVER */
@@ -164,42 +154,40 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 
 /* ---------------------------------
-4. MAIN
+4. SLIDER
 --------------------------------- */
 
-.main-section{ height: 100%; position: relative; overflow-y: auto;  border: 1px solid #eee; }
+.slider-section{ height: 100%; width: 100%; position: relative; z-index: 1; }
 
-.main-section .left-area,
-.main-section .right-area{ width: 50%; float: left; padding: 50px 40px; }
+.bg-img{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; 
+	background-size: cover; }
 
-.main-section .left-area{ padding-right: 25px; }
-
-.main-section .right-area img{ box-shadow: 3px 10px 20px 0px rgba(0,0,0,.1); }
-
-.main-section .right-area{ padding-left: 25px; overflow-x: hidden; }
+.bg-1{ background-image: url(../../images/slider-1-1920x1080.jpg); }
 
 
-	
-.main-section:before{ top: 0; }
+.rev_slider_wrapper.fullscreen-container{ height: 100%!important; width: 100%!important; 
+	margin: 0 auto!important; left: auto!important;}
 
-.main-section:after{ bottom: 0; }
-	
+.forcefullwidth_wrapper_tp_banner{ height: 100%!important; }
 
-.main-section::-webkit-scrollbar { width: 10px; }
- 
-.main-section::-webkit-scrollbar-track { background: #EBEBEB;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); }
- 
-.main-section::-webkit-scrollbar-thumb { background-color: #32D98B; outline: 1px solid #32D98B; }
+.tp-bullet{ border-radius: 50px; }
+
+.tp-leftarrow,
+.tp-rightarrow{ border-radius: 50px; -webkit-transform: scale(1.3); transform: scale(1.3); }
+
+
+.visit-btn{ min-width: 150px!important; }
+
 
 
 /* ---------------------------------
-5. FOOTER
+10. FOOTER
 --------------------------------- */
 
-footer{ position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; text-align: center; }
+footer{ position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; z-index: 10000;
+	text-align: center; }
 
-footer .copyright{ font-size: .95em; line-height: 60px; float: left; }
+footer .copyright{ font-size: .95em; line-height: 60px; left: 0; position: absolute; }
 
 
 footer .show-thumb-btn{ height: 30px; line-height: 30px; margin: 15px 0; position: relative; }
@@ -213,8 +201,8 @@ footer .show-thumb-btn:after{ content:''; position: absolute; bottom: 3px; top: 
 footer .show-thumb-btn:hover{ color: #fff; }
 footer .show-thumb-btn:hover:after{ background: #333;  
 	-webkit-transform: scaleY(1); transform: scaleY(1); }
-*/
 
-footer .social-icons{ float: right; }
 
-footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20px; }  */
+footer .social-icons{ position: absolute; right: 0; top: 0; }
+
+footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20px; } 
