@@ -90,6 +90,10 @@ b.max-bold{ font-weight: 700; }
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
+button {
+	font-size: 15px;
+}
+
 .display-table{ display: table; height: 100%; } 
 .display-table-cell{ display: table-cell; vertical-align: middle; } 
 

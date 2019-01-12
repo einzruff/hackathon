@@ -1,29 +1,22 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>IRCO</title>
+	<title>SUN SCHOOL</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	
 	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
 	
 	<!-- Stylesheets -->
-	<!-- <link href="common-css/bootstrap.css" rel="stylesheet"> -->
-	
 	<link href="common-css/ionicons.css" rel="stylesheet">
 	
-	<!-- REVOLUTION STYLE SHEETS -->
-	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
-		
-	<!-- REVOLUTION JS FILES -->
-		
-	<link href="01_Photography/css/styles.css" rel="stylesheet">
+	<link href="common-css/venobox.css" rel="stylesheet">
 	
-	<link href="01_Photography/css/responsive.css" rel="stylesheet">
+	<link href="02_Portfolio/css/styles.css" rel="stylesheet">
 	
-	<link href="06_Regular_Page/css/language.css" rel="stylesheet">
+	<link href="02_Portfolio/css/responsive.css" rel="stylesheet">
 	
 </head>
 <body>
@@ -44,73 +37,52 @@
 	</ul>
 	</header>
 	
-	<section>
-		<h2> Pick a language </h2> 
-		<ul class="language">
-		<li class="li-language"><button type="button"><img src="../images/United-States.png">Hello</button></li>
-			
-		<li class="li-language"><button type="button"> <img src="../images/Saudi-Arabia.png">مرحبا</button></li>
-
-		<li class="li-language"><button type="button"><img src="../images/China.png">你好</button></li>
-			
-		<li class="li-language"><button type="button"><img src="../images/Chad.png">Tere</button></li>
-			
-		<li class="li-language"><button type="button"><img src="../images/Thailand.png">ສະບາຍດີ</button></li>
-				
-		<li class="li-language"><button type="button"><img src="../images/Spain.png">Hola</button></li>
-		
-		<li class="li-language"><button type="button"><img src="../images/India.png">नमस्ते</button></li>
-				
-		<li class="li-language"><button type="button"><img src="../images/Nepal.png">ਸਤ ਸ੍ਰੀ ਅਕਾਲ</button></li>
-			
-		<li class="li-language"><button type="button"><img src="../images/Swaziland.png">Sawa</button></li>
-		
-		<li class="li-language"><button type="button"><img src="../images/India.png">नमस्ते</button></li>
-				
-		<li class="li-language"><button type="button"><img src="../images/Nepal.png">ਸਤ ਸ੍ਰੀ ਅਕਾਲ</button></li>
-			
-		<li class="li-language"><button type="button"><img src="../images/India.png">ہیلو</button></li>
-		</ul>
-	</section>
-	<style scoped>
-		@import url('https://fonts.googleapis.com/css?family=Montserrat');
+	
+	<section class="main-section">
+		<h2> School or No? </h2>
+		<div class="school-buttons">
+			<ul class="school">
+			<li class="li-school"><button tye="button"> YES </button></li>
+			<li class="li-school"><button tye="button"> NO </button></li>
+			</ul>
+		</div><!-- p-grid -->
+	</section><!-- main-section -->
+	
+	<style scoped> 
+	@import url('https://fonts.googleapis.com/css?family=Montserrat');
 	h2 {
 		text-align: center;
 		margin-top: 100px;
 		color: #ED7828;
 		font-family: 'Montserrat', sans-serif;
 	}
-	img {
-		width: 50px;
-		height: 50px;
-		margin-right: 30px;
-	}
-	.language {
+.school {
 			margin-top: 20px;
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 			list-style-type: none;
 			padding: 0;
 			font-family: 'Montserrat', sans-serif;
-		}
-	.li-language {
-		position:relative;
+}
+.li-school {
+	position:relative;
 		font-family: 'Montserrat', sans-serif;
 		text-align: center; 
 		display: flex;
 		justify-content: center;
 		margin: 20px;
-		padding: 10px;
+		padding: 30px;
     background-color: #e4e4e4;
 		font-size: 15em;
 		border-radius: 10pt;
-	}
-	.li-language:hover {
+}
+.li-school:hover {
 		background-color: #e4e4e4;
 		border: 3pt solid #ED7828;
 	}
 	</style>
 	<footer>
+		
 		<p class="copyright">
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
@@ -133,11 +105,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	
 	<script src="common-js/jquery-3.2.1.min.js"></script>
 	
-	<script src="common-js/tether.min.js"></script>
+	<script src="common-js/isotope.pkgd.min.js"></script>
 	
-	<!-- <script src="common-js/bootstrap.js"></script> -->
+	<script src="common-js/venobox.min.js"></script>
 	
-
+	<script src="common-js/isotope.pkgd.min.js"></script>
+	
 	<script src="common-js/scripts.js"></script>
 	
 </body>
