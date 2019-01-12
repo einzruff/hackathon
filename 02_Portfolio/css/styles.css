@@ -49,7 +49,7 @@ h1,h2,h3{ font-family: 'Poppins', cursive; }
 p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }
 
 button {
-	font-size: 30px;
+	font-size: 20px;
 }
 h1{ font-size: 4em; line-height: 1; }
 h2{ font-size: 2.2em; line-height: 1.1; }
@@ -119,7 +119,7 @@ header:after{ content:''; clear: both; }
 
 header .logo{ float: left; height: 40px; margin: 10px 0; }
 
-header .logo img{ height: 100%; width: auto; }
+header .logo img{ height: 75px; width: auto; }
 
 
 header .main-menu{ float: right; }

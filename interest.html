@@ -33,20 +33,21 @@
 			<li class="drop-down"><a href="#!">Community Outreach</i></a></li>
 			<li><a href="school.html">Contact</a></li>
 			<li><a href="school.html">About US</a></li>
-			<!-- <li><a href="index.html">Language</a></li> -->
-		</li>
 	</ul>
 	</header>
 	
 	
 	<section class="main-section">
-		<h2> School or No? </h2>
-		<div class="school-buttons">
-			<ul class="school">
-      <li class="li-school"><button tye="button"><img src="../images/SchoolHouse.png"> YES </button></li>
-      <li class="li-school"><button tye="button"><img src="../images/SchoolHouse.png"> Maple Elementary </button></li>
-      <li class="li-school"><button tye="button"><img src="../images/SchoolHouse.png"> Madison High School </button></li>
-			<li class="li-school"><button tye="button"> NO </button></li>
+		<h2> Please Select Your Interest</h2>
+		<div class="interest">
+			<ul class="interest-ul">
+      <li class="li-interest"><img src="../images/sport.jpg"></li>
+      <li class="li-interest"><img src="../images/classes.jpg"> </li>
+      <li class="li-interest"><img src="../images/fitness.jpg"> </li>
+      <li class="li-interest"><img src="../images/children.jpg"></li>
+      <li class="li-interest"><img src="../images/workshop.jpg"></li>
+      <li class="li-interest"><img src="../images/community.jpg"></li>
+			<li class="li-interest">SKIP</li>
 			</ul>
 		</div><!-- p-grid -->
 	</section><!-- main-section -->
@@ -54,39 +55,47 @@
 	<style scoped> 
 	@import url('https://fonts.googleapis.com/css?family=Montserrat');
 	img {
-		width: 75px;
-		height: 75px;
-		margin-right: 20px;
-	}
+		/* margin-right: 20px; */
+  }
+  p {
+    text-align: center;
+  }
+  img {
+    border-radius: 5pt;
+  }
 	h2 {
 		text-align: center;
 		margin-top: 100px;
 		color: #ED7828;
 		font-family: 'Montserrat', sans-serif;
 	}
-.school {
-			margin-top: 20px;
+.interest-ul {
+			margin-top: 10px;
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 			list-style-type: none;
 			padding: 0;
 			font-family: 'Montserrat', sans-serif;
 }
-.li-school {
-	position:relative;
+.li-interest {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	  position:relative;
 		font-family: 'Montserrat', sans-serif;
 		text-align: center; 
 		display: flex;
 		justify-content: center;
 		margin: 20px;
-		padding: 30px;
+		/* padding: 30px; */
     background-color: #e4e4e4;
-		font-size: 15em;
-		border-radius: 10pt;
+    font-size: 2em;
+    border-radius: 5pt;
 }
-.li-school:hover {
+.li-interest:hover {
 		background-color: #e4e4e4;
-		border: 3pt solid #ED7828;
+    border: 3pt solid #ED7828;
+    border-radius: 5pt;
 	}
 	</style>
 	<footer>
@@ -96,8 +105,6 @@
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 		</p>
-		
-		<a class="show-thumb-btn" href="#">SHOW THUMBNAILS</a>
 		
 		<ul class="social-icons">
 			<li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>

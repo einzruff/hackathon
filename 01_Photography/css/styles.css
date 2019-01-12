@@ -110,7 +110,7 @@ header:after{ content:''; clear: both; }
 
 header .logo{ float: left; height: 100px; margin: 10px 0; }
 
-header .logo img{ height: 100%; width: auto; }
+header .logo img{ height: 70px; width: auto; }
 
 
 header .main-menu{ float: right; }
