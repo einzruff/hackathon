@@ -16,8 +16,8 @@
 	<link href="Home-Page/css/styles.css" rel="stylesheet">
 	
 	<link href="Home-Page/css/styles.css" rel="stylesheet">
+	<link href="Map-Page/css/styles.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 	 crossorigin="" />
 	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
@@ -47,7 +47,10 @@
 	
 	<section class="map">
 	
-	<div id="mapid" style="width: 600px; height: 400px;"></div>
+	<div id="mapid" style="width: 700px; height: 500px;  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 50%; border: 2pt solid #68DDFC; border-radius:5pt; margin-top: 20px;"></div>
 
 	</section><!-- main-section -->
 	
@@ -201,22 +204,12 @@ onEachFeature: function (feature, layer) {
 }
 }).addTo(mymap);
 </script>
-<div id="floatpanel">
-	<h1>...</h1>
-</div>
-<style>
-
-#mapid {
-	display: flex;
-	justify-content: center;
-}
-
-</style>
 <script src="src/index.ts">
 
 	function myFunction() 
 	{ 
 		document.getElementById("floatpanel").innerHTML = "<h1>asdf</h1>";
+	}
 </script>
 <style scoped>
 		h2 {
