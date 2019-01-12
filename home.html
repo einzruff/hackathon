@@ -16,6 +16,15 @@
 	<link href="Home-Page/css/styles.css" rel="stylesheet">
 	
 	<link href="Home-Page/css/styles.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	 crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	 crossorigin="">
+		// <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	</script>
 	
 </head>
 <body>
@@ -38,7 +47,8 @@
 	
 	<section class="map">
 	
-		
+	<div id="mapid" style="width: 600px; height: 400px;"></div>
+
 	</section><!-- main-section -->
 	
 	<section class="school">
@@ -96,7 +106,118 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	
 </body>
 </html>
+<script>
+		
+		var mymap = L.map('mapid').setView([45.5122, -122.6587], 10);
 
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+	maxZoom: 18,
+	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	id: 'mapbox.streets'
+}).addTo(mymap);
+
+var mapFeatures = [{
+"type": "Feature",
+"properties": {
+		"name": "Rigler Elementary",
+		"img":"riglerelem.png",
+		"show_on_map":true
+ },
+ "geometry": {
+		"type": "Point",
+		"coordinates": [-122.6105059,45.5564529,]} },
+	{ 
+		"type": "Feature",
+		"properties": {
+			"name": "Immigrant and Refugee Community Organization",
+			"address":"8040 NE Sandy Blvd, Portland, OR 97213",
+			"phone":"503-235-9396",
+			"hours":"8-5",
+			"img":"IRCO.png",
+			"show_on_map":true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates":[-122.5821823,45.5516956,]},	
+		},
+		 { 
+			 "type": "Feature", 
+			 "properties": { 
+				 "name": "Earl Boyles Elementary School", 
+				 "address":"10822 S.E. Bush Street, Portland, OR 97266", 
+				 "phone":"503-256-6554", 
+				 "hours":"8-5", 
+				 "img":"earlboyeselem.png",
+				 "show_on_map":true }, 
+				 "geometry": { 
+					 "type": "Point", 
+					 "coordinates":[-122.551952,45.494709,]
+					 }
+		},
+			{ "type": "Feature", 
+		 "properties": { 
+			 "name": "George Middle School", 
+			 "address":"10000 North Burr Avenue, Portland, OR 97203", 
+			 "phone":"503-916-6262", 
+			 "hours":"8-5", 
+			 "img":"georgemiddlescool.png",
+			 "show_on_map":true }, 
+			 "geometry": { "type": "Point",
+				"coordinates":[-122.736689,45.596308,]
+			 }
+		},
+		 { "type": "Feature", 
+		 "properties": { "name": "Gilbert Heights Elementary School", 
+		 "address":"12839 S.E. Holgate Boulevard, Portland, OR 97236",
+		"phone":"503-256-6502", 
+		"hours":"8-5", 
+		"img":"gilbertheights.png",
+		"show_on_map":true }, 
+		"geometry": { "type": "Point", 
+		"coordinates":[-122.531794,45.490621,]
+		} 
+		},
+		 { "type": "Feature", 
+		 "properties": { 
+			 "name": "Gilbert Park Elementary School", 
+			 "address":"13132 S.E. Ramona Street, Portland, OR 97236", 
+			 "phone":"503-256-6531", 
+			 "hours":"8-5", 
+			 "img":"gilbertparkelem.png",
+			 "show_on_map":true }, 
+			 "geometry": { "type": "Point", 
+			 "coordinates":[-122.52839,45.479857,]
+			 }
+		 }];
+ 
+var datapoints = L.geoJSON(mapFeatures, {
+filter: function(feature,layer) {
+	return feature.properties.show_on_map;
+},
+onEachFeature: function (feature, layer) {
+	layer.bindPopup('<h1 onclick="myFunction()">'+feature.properties.name+'</h1><p>Address: '+feature.properties.address+'</p><p>Phone: '+feature.properties.phone+'</p><p><img height="72" width="72" src=images\\'+feature.properties.img+'></p>');
+}
+}).addTo(mymap);
+</script>
+<div id="floatpanel">
+	<h1>...</h1>
+</div>
+<style>
+
+#mapid {
+	display: flex;
+	justify-content: center;
+}
+
+</style>
+<script src="src/index.ts">
+
+	function myFunction() 
+	{ 
+		document.getElementById("floatpanel").innerHTML = "<h1>asdf</h1>";
+</script>
 <style scoped>
 		h2 {
 			padding: 25px;
