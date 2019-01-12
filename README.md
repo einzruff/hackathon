@@ -22,5 +22,5 @@ Our primary audience is students, and the parents of students at SUN schools, de
 * Steph: Visual design and UX, wireframes
 * Daphne: UX, wireframes, mapping logistics
 * Mahria: UX, wireframes, mapping logistics, docs
-* Marcy: Javascript
-* Anna: 
+* Marcy: Main front end dev, making our vision real
+* Anna: Presentation and documentation
