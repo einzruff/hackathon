@@ -8,13 +8,14 @@
 	
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	
 	<!-- Stylesheets -->
 	<link href="common-css/ionicons.css" rel="stylesheet">
 	
-	<link href="06_Regular_Page/css/styles.css" rel="stylesheet">
+	<link href="Home-Page/css/styles.css" rel="stylesheet">
 	
-	<link href="06_Regular_Page/css/responsive.css" rel="stylesheet">
+	<link href="Home-Page/css/styles.css" rel="stylesheet">
 	
 </head>
 <body>
@@ -31,7 +32,7 @@
 				<li><a href="school.html">Sun School</a></li>
 				<li class="drop-down"><a href="#!">Community Outreach</i></a></li>
 				<li><a href="home.html">Contact</a></li>
-				<li><a href="home.html">About US</a></li>
+				<li><a href="home.html">About us</a></li>
 		</ul>
 	</header>
 	
@@ -40,6 +41,91 @@
 		
 	</section><!-- main-section -->
 	
+	<section class="school">
+			<ul class="ul-school">
+			<li class="li-school"><h2> School </h2><img class="school-img" src="../images/School-Left-Card.png" alt=""></li>
+			<li class="li-school"><h2> Contact</h1><img class="school-img" src="../images/Contact-and-Card1.png" alt=""></li>
+		</ul>
+</section>
+	<section class="activities">
+		<h2>Events</h2>
+		<ul class="ul-activities">
+			<li class="li-activities"><img src="../images/Events-Card-1.png" alt=""></li>
+			<li class="li-activities"><img src="../images/Events-Card-2.png" alt=""></li>
+			<li class="li-activities"><img src="../images/Events-Card-3.png" alt=""></li>
+		</ul>
+	</section>
+	<section class="community">
+		<h2>Community</h2>
+			<ul class="ul-community">
+				<li class="li-community"><img src="../images/Community-Card-1.png" alt=""></li>
+				<li class="li-community"><img src="../images/Community-Card-2.png" alt=""></li>
+				<li class="li-community"><img src="../images/Community-Card-3.png" alt=""></li>
+			</ul>
+		</section>
+		<section class="Events">
+				<ul>
+					<li><img src="" alt=""></li>
+					<li><img src="" alt=""></li>
+					<li><img src="" alt=""></li>
+				</ul>
+			</section>
+
+	<style scoped>
+	h2 {
+		padding: 25px;
+		/* margin-top: 75px; */
+		text-align: center;
+		background-color: #e4e4e4;
+	}
+	.community {
+		margin-top: 75px;
+		background-color: #e4e4e4;
+	}
+	.ul-community {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			list-style-type: none;
+			font-family: 'Montserrat', sans-serif;
+			padding: 30px;
+	}
+.li-community {
+	padding: 50px;
+}
+/* img {
+	height: 300px;
+	width: 350px;
+} */
+	.activities {
+		margin-top: 75px;
+		background-color: #e4e4e4;
+	}
+.ul-activities {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			list-style-type: none;
+			font-family: 'Montserrat', sans-serif;
+			padding: 30px;
+	}
+.li-activities {
+	padding: 50px;
+}
+.school {
+padding: 100;
+	}
+.ul-school {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			list-style-type: none;
+			font-family: 'Montserrat', sans-serif;
+			padding: 30px;
+}
+.li-school {
+	height: 500px;
+	width: 500px;
+	padding: 50px;
+}
+	</style>
 	<footer>
 		<p class="copyright">
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
